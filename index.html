@@ -1,14 +1,4 @@
-<!doctype html>
-
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>Voxel Editor</title>
-  <meta name="description" content="Babylon.js Voxel Editor">
-  <meta name="author" content="Lark">
-  <style>
-    html,
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Cube Editor</title><meta name="description" content="Babylon.js Cube Editor"><meta name="author" content="Lark"><style>html,
     body {
       overflow: hidden;
       width: 100%;
@@ -17,16 +7,20 @@
       padding: 0;
     }
 
+    #fps {
+			position: absolute;
+			background-color: black;
+			text-align: center;
+			font-size: 16px;
+			color: white;
+			top: 15px;
+			left: 10px;
+			width: 60px;
+			height: 20px;
+		}
+
     #renderCanvas {
       width: 100%;
       height: 100%;
       touch-action: none;
-    }
-  </style>
-<link rel="icon" href="favicon.ico"></head>
-
-<body>
-  <canvas id="renderCanvas" touch-action="none"></canvas>
-<script src="js/cubeEditor.js"></script></body>
-
-</html>
+    }</style><link rel="icon" href="favicon.ico"></head><body><div id="fps">0</div><canvas id="renderCanvas" touch-action="none"></canvas><script src="js/cubeEditor.js"></script></body></html>
