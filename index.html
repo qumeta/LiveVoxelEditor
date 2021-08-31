@@ -1,5 +1,5 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Cube Editor</title><meta name="description" content="Babylon.js Cube Editor"><meta name="author" content="Lark"><script src="https://cdn.bootcdn.net/ajax/libs/vConsole/3.3.4/vconsole.min.js"></script><script>// init vConsole
-    var vConsole = new VConsole();
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Cube Editor V2</title><meta name="description" content="Babylon.js Cube Editor"><meta name="author" content="Lark"><script src="https://cdn.bootcdn.net/ajax/libs/vConsole/3.3.4/vconsole.min.js"></script><script>// init vConsole
+    //var vConsole = new VConsole();
     console.log("Hello Editor");</script><style>html,
     body {
       overflow: hidden;
@@ -9,25 +9,18 @@
       padding: 0;
     }
 
-    #fps {
-			position: absolute;
-			background-color: black;
-			text-align: center;
-			font-size: 24px;
-			color: white;
-			bottom: 25px;
-			left: 20px;
-			width: 120px;
-			height: 30px;
-		}
-
     #renderCanvas {
+      z-index: 0; 
+      position: absolute;
       width: 100%;
       height: 100%;
+      outline: none; 
+      background: radial-gradient(circle, rgb(81, 90, 109) 0%, rgb(49, 53, 68) 100%);
       touch-action: none;
     }
 
-    #__vconsole .vc-toolbar, #__vconsole .vc-switch {
+    #__vconsole .vc-toolbar,
+    #__vconsole .vc-switch {
       bottom: 30px;
       right: 30px;
-    }</style><link rel="icon" href="favicon.ico"></head><body><div id="fps">0</div><canvas id="renderCanvas" touch-action="none"></canvas><script src="js/cubeEditor.js"></script></body></html>
+    }</style><link rel="icon" href="favicon.ico"></head><body><canvas id="renderCanvas"></canvas><script src="js/cubeEditor.js"></script></body></html>
